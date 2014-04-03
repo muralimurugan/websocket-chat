@@ -155,16 +155,14 @@ class User extends CI_Controller {
             error_log("user data: " . print_r($userExistsData,true));
             if($userExistsData != FALSE){
                 error_log("users exists!!!!");
-               echo json_encode(array("status" => "error", "errormessage" => "Email Address already in use"));
-               die();
+               exit(json_encode(array("status" => "error", "errormessage" => "Email Address already in use")));
             }
             
             $userId = $this->user_model->addUser($userData); 
             $userData['password'] = $password;
             if(!empty($userId)){
                 $this->auth_model->authenticate($userData);
-                echo json_encode(array("status" => "success"));
-                die();
+                exit(json_encode(array("status" => "success")));
             }
             else
                 echo json_encode(array("status" => "error", "errormessage" => "Failed to add user"));

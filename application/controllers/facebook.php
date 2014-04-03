@@ -100,7 +100,6 @@ class Facebook extends CI_Controller {
                 $localUserData = $this->user_model->getUserDataById($userId);
                 $avatar = $localUserData[0]['avatar'];
                 $userId = $localUserData[0]['user_id'];
-                error_log('local user data: ' .  print_r($localUserData,true));
             }
             
             $session_data = array(
