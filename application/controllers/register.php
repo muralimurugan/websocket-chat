@@ -6,6 +6,3 @@ class Register extends CI_Controller {
 		$this->load->view('register_view');
 	}
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
