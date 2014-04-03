@@ -1,0 +1,476 @@
+/* 
+    Document   : style.css
+    Created on : Nov 13, 2013, 1:25:20 PM
+    Author     : patrickburns
+*/
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+    color: #5a5a5a;
+}
+
+.header-avatar{
+    width: 20px;
+}
+
+/*****************/
+/***CHAT WINDOW***/
+/*****************/
+
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body
+{
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body
+{
+    margin-right: 60px;
+}
+
+
+.chat li .chat-body p
+{
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.panel-body
+{
+    overflow-y: scroll;
+    height: 400px;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+.img-circle{
+    width: 50px;
+}
+
+
+.user-list
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-list li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.user-list li.left .user-list
+{
+    margin-left: 60px;
+}
+
+/***************/
+/***LOGIN BOX***/
+/***************/
+
+.form-signin {
+  /*max-width: 400px; */
+  display:block;
+  background-color: #f7f7f7;
+  -moz-box-shadow: 0 0 3px 3px #888;
+    -webkit-box-shadow: 0 0 3px 3px #888;
+	box-shadow: 0 0 3px 3px #888;
+  border-radius:2px;
+}
+.main{
+	padding: 38px;
+}
+.social-box{
+  margin: 0 auto;
+  padding: 38px;
+  border-bottom:1px #ccc solid;
+}
+.social-box a{
+  font-weight:bold;
+  font-size:18px;
+  padding:8px;
+}
+.social-box a i{
+  font-weight:bold;
+  font-size:20px;
+}
+.btn-facebook {
+  color:#fff;
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook:active,
+.btn-facebook.active {
+  color:#fff;
+  background-color: #344e86;
+  border-color: #2d4373;
+}
+.btn-facebook.disabled:hover,
+.btn-facebook.disabled:focus,
+.btn-facebook.disabled:active,
+.btn-facebook.disabled.active,
+.btn-facebook[disabled]:hover,
+.btn-facebook[disabled]:focus,
+.btn-facebook[disabled]:active,
+.btn-facebook[disabled].active,
+fieldset[disabled] .btn-facebook:hover,
+fieldset[disabled] .btn-facebook:focus,
+fieldset[disabled] .btn-facebook:active,
+fieldset[disabled] .btn-facebook.active {
+  color:#fff;
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+a.btn-facebook:hover{
+    color:#fff;
+}
+
+.heading-desc{
+	font-size:20px;
+	font-weight:bold;
+	padding:38px 38px 0px 38px;
+	
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: 20px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.login-footer{
+	background:#f0f0f0;
+	margin: 0 auto;
+	border-top: 1px solid #dadada;
+	padding:20px;
+}
+.login-footer .left-section a{
+	font-weight:bold;
+	color:#8a8a8a;
+	line-height:19px;
+}
+.mg-btm{
+	margin-bottom:20px;
+}
+
+/****************/
+/*Button Spinner*/
+/****************/
+.spinner {
+  display: inline-block;
+  opacity: 0;
+  width: 0;
+
+  -webkit-transition: opacity 0.25s, width 0.25s;
+  -moz-transition: opacity 0.25s, width 0.25s;
+  -o-transition: opacity 0.25s, width 0.25s;
+  transition: opacity 0.25s, width 0.25s;
+}
+
+.has-spinner.active {
+}
+
+.has-spinner.active .spinner {
+  opacity: 1;
+  width: auto; /* This doesn't work, just fix for unkown width elements */
+}
+
+.has-spinner.btn-mini.active .spinner {
+    width: 10px;
+}
+
+.has-spinner.btn-small.active .spinner {
+    width: 13px;
+}
+
+.has-spinner.btn.active .spinner {
+    width: 16px;
+}
+
+.has-spinner.btn-large.active .spinner {
+    width: 19px;
+}
+
+/**********************/
+/****CSS ANIMATIONS****/
+/**********************/
+
+.shake {
+  animation-name: shake;
+  -webkit-animation-name: shake;
+  animation-duration: 1s;	
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease;	
+  -webkit-animation-timing-function: ease;	
+
+  visibility: visible !important;		
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.btn-file > input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  font-size: 23px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: translate(-300px, 0) scale(4);
+  direction: ltr;
+}
+
+.fileinput {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.fileinput .uneditable-input {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  cursor: text;
+}
+
+.fileinput .thumbnail {
+  display: inline-block;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.fileinput .thumbnail > img {
+  max-height: 100%;
+}
+
+.fileinput .btn {
+  vertical-align: middle;
+}
+
+.fileinput-exists .fileinput-new,
+.fileinput-new .fileinput-exists {
+  display: none;
+}
+
+.fileinput-inline .fileinput-controls {
+  display: inline;
+}
+
+.fileinput .uneditable-input {
+  white-space: normal;
+}
+
+.fileinput-new .input-group .btn-file {
+  border-radius: 0 4px 4px 0;
+}
+
+.fileinput-new .input-group .btn-file.btn-xs,
+.fileinput-new .input-group .btn-file.btn-sm {
+  border-radius: 0 3px 3px 0;
+}
+
+.fileinput-new .input-group .btn-file.btn-lg {
+  border-radius: 0 6px 6px 0;
+}
+
+.form-group.has-warning .fileinput .uneditable-input {
+  color: #c09853;
+  border-color: #faebcc;
+}
+
+.form-group.has-warning .fileinput .fileinput-preview {
+  color: #c09853;
+}
+
+.form-group.has-warning .fileinput .thumbnail {
+  border-color: #faebcc;
+}
+
+.form-group.has-error .fileinput .uneditable-input {
+  color: #b94a48;
+  border-color: #ebccd1;
+}
+
+.form-group.has-error .fileinput .fileinput-preview {
+  color: #b94a48;
+}
+
+.form-group.has-error .fileinput .thumbnail {
+  border-color: #ebccd1;
+}
+
+.form-group.has-success .fileinput .uneditable-input {
+  color: #468847;
+  border-color: #d6e9c6;
+}
+
+.form-group.has-success .fileinput .fileinput-preview {
+  color: #468847;
+}
+
+.form-group.has-success .fileinput .thumbnail {
+  border-color: #d6e9c6;
+}
+
+#uploadNewAvatarButton{
+    display: none;
+    margin-left: -55px;
+}
+
+#avatarMessageContainer{
+    height:50px;
+    margin-bottom: 20px;
+}
+
+.alert{
+    text-align:center;
+}
+
+
+@media all and (max-width: 1200px) and (min-width: 520px) {
+  #useFaceebokAvatar {
+    font-size:12px;
+  }
+  
+  #socialAvatarControlContainer{
+    margin-top: 10px;
+  }
+  
+  .fileinput{  
+    margin-top: 9px;
+  }
+}
+
+@media all and (max-width: 550px) and (min-width: 520px){
+    #avatarMessageContainer{
+        font-size:13px;
+    }
+}
+
+@media all and (max-width: 520px) and (min-width: 351px){
+    #avatarMessageContainer{
+        font-size:10px;
+    }
+}
+
+@media all and (max-width: 351px) and (min-width: 0px){
+    #avatarMessageContainer{
+        margin-bottom:10px;
+        font-size:8px;
+    }
+    #useFaceebokAvatar{
+        font-size:10px;
+    }
+}
